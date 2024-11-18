@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Design Loft</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-bold text-gray-800 hover:text-blue-600 logo">The Design Loft</a>
+        </div>
+        
+        <!-- Menu for larger screens -->
+        <div class="hidden md:flex space-x-10">
+          <a href="#home" class="text-lg text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+          <a href="#about" class="text-lg text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+          <a href="#portfolio" class="text-lg text-gray-700 hover:text-blue-600 transition duration-300">Portfolio</a>
+          <a href="#services" class="text-lg text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+          <a href="blog.html" class="text-lg text-gray-700 hover:text-blue-600 transition duration-300">Blog</a>
+        </div>
+
+        <!-- Contact button -->
+        <div class="hidden md:flex">
+          <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-full font-medium text-lg hover:bg-blue-700 transition duration-300">Contact Us</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-800 hover:text-blue-600 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12h18M3 6h18M3 18h18"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden" style="display: none;">
+      <div class="px-6 py-4 bg-gray-800">
+        <a href="#home" class="block text-white py-2 px-3 rounded-md text-lg font-medium">Home</a>
+        <a href="#about" class="block text-white py-2 px-3 rounded-md text-lg font-medium">About</a>
+        <a href="#portfolio" class="block text-white py-2 px-3 rounded-md text-lg font-medium">Portfolio</a>
+        <a href="#services" class="block text-white py-2 px-3 rounded-md text-lg font-medium">Services</a>
+        <a href="blog.html" class="block text-white py-2 px-3 rounded-md text-lg font-medium">Blog</a>
+        <a href="#contact" class="block text-white py-2 px-3 rounded-md text-lg font-medium bg-blue-600 hover:bg-blue-700">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center h-screen" style="background-image: url('hero-img.jpeg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for text visibility -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex flex-col items-center justify-center h-full text-center text-white">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+            Transform Your Space with Timeless Design
+        </h1>
+        <p class="text-lg sm:text-xl lg:text-2xl mb-6 max-w-3xl mx-auto">
+            At The Design Loft, we create spaces that reflect your style, combining elegance and functionality with expertly crafted furniture and thoughtful interior design solutions.
+        </p>
+        <a href="#services" class="inline-block px-8 py-3 bg-blue-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-blue-700 transition duration-300">
+            Discover Our Services
+        </a>
+    </div>
+</section>
+
+<!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div class="flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
+        <!-- Left Column: Text -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
+            About Us
+          </h2>
+          <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+            At The Design Loft, we believe that every space should tell a story. Our team of expert designers and craftsmen are dedicated to curating timeless, stylish, and functional interiors that reflect your personality and elevate your environment.
+          </p>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">What We Do</h3>
+          <ul class="list-disc list-inside text-lg text-gray-600 space-y-3">
+            <li>Custom Furniture Design</li>
+            <li>Residential Interior Design</li>
+            <li>Commercial Space Planning</li>
+            <li>3D Visualization and Renderings</li>
+            <li>Home Decor and Styling</li>
+          </ul>
+        </div>
+        
+        <!-- Right Column: Image -->
+        <div class="lg:w-1/2 flex justify-center">
+          <img src="whatwedo-img.jpeg" alt="Interior Design" class="rounded-lg shadow-lg w-full max-w-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div class="text-center mb-12">
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
+                  Our Portfolio
+              </h2>
+              <p class="text-lg sm:text-xl text-gray-600">
+                  Discover the beauty and craftsmanship of our work, tailored to fit every unique space.
+              </p>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+              <!-- Portfolio Item 1 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img src="modern.jpeg" alt="Project 1" class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center text-white p-6">
+                      <h3 class="text-2xl font-bold">Modern Living Room</h3>
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 2 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img src="dining.jpeg" alt="Project 2" class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center text-white p-6">
+                      <h3 class="text-2xl font-bold">Elegant Dining Area</h3>
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 3 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img src="bedroom.jpeg" alt="Project 3" class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center text-white p-6">
+                      <h3 class="text-2xl font-bold">Cozy Bedroom Design</h3>
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 4 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img src="office.jpeg" alt="Project 4" class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center text-white p-6">
+                      <h3 class="text-2xl font-bold">Sleek Office Space</h3>
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 5 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img src="kitchen.jpeg" alt="Project 5" class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center text-white p-6">
+                      <h3 class="text-2xl font-bold">Contemporary Kitchen</h3>
+                  </div>
+              </div>
+
+              <!-- Portfolio Item 6 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img src="bathroom.jpeg" alt="Project 6" class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  <div class="absolute inset-0 bg-black opacity-50"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-center text-white p-6">
+                      <h3 class="text-2xl font-bold">Luxury Bathroom Design</h3>
+                  </div>
+              </div>
+          </div>
+
+          <!-- View More Button -->
+          <div class="text-center mt-12">
+              <a href="#services" class="px-8 py-3 bg-blue-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-blue-700 transition duration-300">
+                  View More Projects
+              </a>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Services Section -->
+<section id="services" class="py-20 bg-gray-200">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
+                Our Services
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-600">
+                Whether you're designing your home, office, or commercial space, we offer expert services to bring your vision to life.
+            </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div class="mb-6">
+                    <img src="custom.jpeg" alt="Custom Furniture" class="w-24 h-24 object-cover rounded-full mb-4">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Custom Furniture Design</h3>
+                <p class="text-gray-600 text-center">
+                    We design bespoke furniture that enhances your living or working space with style and functionality.
+                </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div class="mb-6">
+                    <img src="interior.jpeg" alt="Interior Design" class="w-24 h-24 object-cover rounded-full mb-4">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Interior Design</h3>
+                <p class="text-gray-600 text-center">
+                    Our interior design services bring personality, balance, and elegance to any space, making it feel like home.
+                </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div class="mb-6">
+                    <img src="space.jpeg" alt="Space Planning" class="w-24 h-24 object-cover rounded-full mb-4">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Space Planning</h3>
+                <p class="text-gray-600 text-center">
+                    We optimize your space to maximize its potential, ensuring that every square foot serves a purpose.
+                </p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div class="mb-6">
+                    <img src="3D.jpeg" alt="3D Visualization" class="w-24 h-24 object-cover rounded-full mb-4">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">3D Visualization & Renderings</h3>
+                <p class="text-gray-600 text-center">
+                    Visualize your dream space before it's built with high-quality 3D renderings and walkthroughs.
+                </p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div class="mb-6">
+                    <img src="home-decor.jpeg" alt="Home Decor" class="w-24 h-24 object-cover rounded-full mb-4">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Home Decor & Styling</h3>
+                <p class="text-gray-600 text-center">
+                    We help you choose the right decor to elevate the ambiance of your home, bringing the finishing touches to every room.
+                </p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <div class="mb-6">
+                    <img src="commercial.jpeg" alt="Commercial Design" class="w-24 h-24 object-cover rounded-full mb-4">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Commercial Design</h3>
+                <p class="text-gray-600 text-center">
+                    From offices to retail spaces, we create functional and aesthetically pleasing designs tailored to your business needs.
+                </p>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-12">
+            <a href="#contact" class="px-8 py-3 bg-blue-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-blue-700 transition duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-4">
+                Get in Touch
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-600">
+                We'd love to hear from you! Whether you have a question or need help with your design project, feel free to reach out.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+            <!-- Left Side: Contact Info -->
+            <div class="flex flex-col items-center justify-center bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Our Office</h3>
+                <div class="text-lg text-gray-600 mb-4">
+                    <p>41 road F close Festac Town</p>
+                    <p>Lagos, Nigeria</p>
+                </div>
+                <div class="text-lg text-gray-600 mb-4">
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> contact@thedesignloft.com</p>
+                </div>
+                <div class="text-lg text-gray-600 mb-4">
+                    <p><strong>Business Hours:</strong></p>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Us</h3>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-gray-800">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-gray-800">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-gray-800">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-blue-600 text-white text-lg font-medium rounded-lg hover:bg-blue-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Location Map (Optional) -->
+        <div class="text-center mt-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visit Us</h3>
+            <div class="w-full h-64 rounded-lg overflow-hidden">
+                <!-- Replace with your own Google Map iframe -->
+                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- About Section -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">About The Design Loft</h4>
+                <p class="text-gray-400">
+                    The Design Loft is your premier source for modern and sophisticated furniture and interior design solutions. Elevate your home with our expert curation.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Portfolio</a></li>
+                    <li><a href="#" class="hover:underline">Services</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h4>
+                <p class="text-gray-400 mb-4">Get the latest updates and design tips right to your inbox.</p>
+                <form id="newsletterForm" class="flex flex-col space-y-3">
+                    <input id="emailInput" type="email" placeholder="Enter your email" class="px-4 py-2 rounded-lg border border-gray-600 bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold">
+                        Subscribe
+                    </button>
+                </form>
+                <p id="formMessage" class="mt-2 text-sm text-green-500 hidden">Subscription successful!</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                <p class="text-gray-400 mb-2">41 Road Festac Town Lagos</p>
+                <p class="text-gray-400 mb-2">Email: contact@thedesignloft.com</p>
+                <p class="text-gray-400">Phone: (123) 456-7890</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-8 border-gray-700">
+
+        <!-- Bottom Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 mb-4 md:mb-0">&copy; <span id="year"></span> The Design Loft. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-white"><img src="facebook.png" alt="facebook.png" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-500 hover:text-white"><img src="instagram.png" alt="instagram.png" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-500 hover:text-white"><img src="pinterest.png" alt="pinterest.png" class="w-10 h-10"></a>
+                <a href="#" class="text-gray-500 hover:text-white"><img src="tik-tok.png" alt="" class="w-10 h-10"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
